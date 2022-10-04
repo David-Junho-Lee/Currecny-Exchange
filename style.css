@@ -33,6 +33,7 @@ body {
   position: relative;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -43,6 +44,20 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   width: 100%;
+  cursor: pointer;
+}
+
+.equal-sign { 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.dropdown-content p {
+  padding: 10px;
+}
+
+.dropdown-content ul {
+  list-style: none;
 }
 
 /* Links inside the dropdown */
@@ -55,7 +70,7 @@ body {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content p:hover {background-color: rgb(218, 183, 210);}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -67,25 +82,22 @@ body {
   background-color: rgb(48, 167, 117);
 }
 
-.input-box {
-  border: 1px solid #dcdcde;
-}
-
 .input-box input {
-  width: 100%;
+  width: 98%;
   height: 30px;
 }
 
 .equal-sign {
   text-align: center;
+  font-size: 3vw;
 }
 
 #to-unit {
-  float: right;
+  text-align: right;
 }
 
 #from-unit {
-  float: right;
+  text-align: right;
 }
 
 .flag-img {

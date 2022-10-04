@@ -11,31 +11,30 @@
     <div class="exchange-box">
     <div class="dropdown">
       <button class="dropbtn" id="from-btn"><img class="flag-img" src="./images/new-zealand.png" />NZD</button>
-      <ul class="dropdown-content" id="from-currency-list">
-        <li id="USD"><img class="flag-img" src="images/united-states.png">USD</li>
-        <li id="KRW"><img class="flag-img" src="images/south-korea.png">>KRW</li>
-        <li id="AUD"><img class="flag-img" src="images/australia.png">AUD</li>
-        <li id="NZD"><img class="flag-img" src="images/new-zealand.png">NZD</li>
-      </ul>
+      <div class="dropdown-content" id="from-currency-list">
+        <p id="USD"><img class="flag-img" src="images/united-states.png">USD</p>
+        <p id="KRW"><img class="flag-img" src="images/south-korea.png">KRW</p>
+        <p id="AUD"><img class="flag-img" src="images/australia.png">AUD</p>
+        <p id="NZD"><img class="flag-img" src="images/new-zealand.png">NZD</p>
+      </div>
     </div>
-      <div class="input-box" onkeyup="fromConvert()">
+      <div class="input-box" onkeyup="convert('from')">
         <input type="text" id="from-input"/>
         <div id="from-unit">Dollar</div>
       </div>
-    
   </div>
   <h1 class="equal-sign">=</h1>
   <div class="exchange-box">
     <div class="dropdown">
-      <button class="dropbtn" id='to-btn'><img class="flag-img" src="images/south-korea.png"/>USD</button>
-      <ul class="dropdown-content" id="to-currency-list">
-        <li id="USD"><img class="flag-img" src="images/united-states.png"/>USD</li>
-        <li id="KRW"><img class="flag-img" src="images/south-korea.png"/>KRW</li>
-        <li id="AUD"><img class="flag-img" src="images/australia.png"/>AUD</li>
-        <li id="NZD"><img class="flag-img" src="images/new-zealand.png"/>NZD</li>
-      </ul>
+      <button class="dropbtn" id='to-btn'><img class="flag-img" src="images/united-states.png"/>USD</button>
+      <div class="dropdown-content" id="to-currency-list">
+        <p id="USD"><img class="flag-img" src="images/united-states.png"/>USD</p>
+        <p id="KRW"><img class="flag-img" src="images/south-korea.png"/>KRW</p>
+        <p id="AUD"><img class="flag-img" src="images/australia.png"/>AUD</p>
+        <p id="NZD"><img class="flag-img" src="images/new-zealand.png"/>NZD</p>
+        </div>
     </div>
-      <div class="input-box" onkeyup="toConvert()" >
+      <div class="input-box" onkeyup="convert('to')">
         <input type="text" id="to-input"/>
         <div id="to-unit">Dollar</div>
       </div>
